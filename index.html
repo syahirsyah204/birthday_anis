@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Anis 🤍</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi Anis 🤍</h1>
+  <p>This page is only for you.</p>
+  <button onclick="revealMessage()">Tap here</button>
+</section>
+
+<!-- MESSAGE -->
+<section class="message" id="messageBox">
+  <p>
+    I may not always say things perfectly,<br>
+    but I want you to know I’m serious about us<br>
+    and I’m building my future with intention.
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <h2>Our Moments</h2>
+  <div class="photos">
+    <img src="images/anis1.jpg" onclick="openPhoto(this)">
+    <img src="images/anis2.jpg" onclick="openPhoto(this)">
+    <img src="images/anis3.jpg" onclick="openPhoto(this)">
+  </div>
+</section>
+
+<!-- SECRET -->
+<section class="secret">
+  <h2>One more thing</h2>
+  <button onclick="showSecret()">Open</button>
+  <p id="secretText"></p>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <span onclick="closePhoto()">×</span>
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

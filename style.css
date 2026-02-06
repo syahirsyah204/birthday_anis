@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fff7fb;
+  color: #333;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+}
+
+.hero button {
+  padding: 12px 24px;
+  border: none;
+  background: #ff7aa2;
+  color: white;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* MESSAGE */
+.message {
+  display: none;
+  padding: 40px 20px;
+  animation: fadeIn 1s ease;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 40px 20px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.photos img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* SECRET */
+.secret {
+  padding: 40px 20px;
+}
+
+.secret button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal img {
+  max-width: 90%;
+  margin-top: 20%;
+}
+
+.modal span {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
